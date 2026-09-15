@@ -10,3 +10,14 @@ a=1/(1+np.exp(-z))
 
 print("z:",z)
 print("a:",a)
+
+# target
+y=1
+
+# backprop
+dz=(a-y)*a*(1-a)
+dw=x*dz
+db=dz
+
+print("dw:",dw)
+print("db:",db)
